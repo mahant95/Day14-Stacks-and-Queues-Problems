@@ -1,9 +1,14 @@
 package com.Day14.stackandqueue.mahant;
+
 public class Queue {
 	LinkedList list = new LinkedList();
 	public void enQueue(Object data)
 	{
 		list.addFirstNode(data);
+	}
+	public void deQueue()
+	{
+		list.deleteFirstNode();
 	}
 	public void display()
 	{
@@ -16,5 +21,12 @@ public class Queue {
 		queue.enQueue(30);
 		queue.enQueue(56);
 		queue.display();
+		queue.deQueue();
+		queue.display();
+		queue.deQueue();
+		queue.display();
+		queue.deQueue();
+		queue.display();
+		
 	}
 }
